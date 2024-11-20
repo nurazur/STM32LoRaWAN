@@ -102,7 +102,7 @@
  */
 #define STATIC_DEVICE_EUI                                  1
 
-*!
+/*!
  * end-device IEEE EUI (big endian)
  */
 #define LORAWAN_DEVICE_EUI  { 0x2c, 0xf7, 0xf1, 0x20, 0x24, 0x90, 0x0a, 0x6f }
