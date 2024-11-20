@@ -100,7 +100,12 @@
  * When set to 1 DevEui is LORAWAN_DEVICE_EUI
  * When set to 0 DevEui is automatically set with a value provided by MCU platform
  */
-#define STATIC_DEVICE_EUI                                  0
+#define STATIC_DEVICE_EUI                                  1
+
+*!
+ * end-device IEEE EUI (big endian)
+ */
+#define LORAWAN_DEVICE_EUI  { 0x2c, 0xf7, 0xf1, 0x20, 0x24, 0x90, 0x0a, 0x6f }
 
 // This leaves all join ids (not keys, like the field name suggests)
 // empty, the actual id values will be configured at runtime
