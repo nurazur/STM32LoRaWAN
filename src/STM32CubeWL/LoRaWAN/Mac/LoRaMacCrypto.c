@@ -965,6 +965,13 @@ LoRaMacCryptoStatus_t LoRaMacCryptoGetFCntUp( uint32_t* currentUp )
 
     return LORAMAC_CRYPTO_SUCCESS;
 }
+
+LoRaMacCryptoStatus_t LoRaMacCryptoSetFCntUp( uint32_t currentUp )
+{
+    CryptoNvm->FCntList.FCntUp = currentUp;
+    return LORAMAC_CRYPTO_SUCCESS;
+}
+
 #if (defined( LORAMAC_VERSION ) && ( LORAMAC_VERSION == 0x01000300 ))
 LoRaMacCryptoStatus_t LoRaMacCryptoGetFCntDown( FCntIdentifier_t fCntID, uint16_t maxFCntGap, uint32_t frameFcnt, uint32_t* currentDown )
 {
