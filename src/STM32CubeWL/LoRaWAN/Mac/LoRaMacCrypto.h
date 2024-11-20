@@ -225,6 +225,14 @@ LoRaMacCryptoStatus_t LoRaMacCryptoGetFCntDown( FCntIdentifier_t fCntID, uint32_
 LoRaMacCryptoStatus_t LoRaMacCryptoGetFCntUp( uint32_t* currentUp );
 
 /*!
+ * Updates fCntUp uplink counter value.
+ *
+ * \param [in]    currentUp      - Uplink counter value
+ * \retval                       - Status of the operation
+ */
+LoRaMacCryptoStatus_t LoRaMacCryptoSetFCntUp( uint32_t currentUp );
+
+/*!
  * Computes next RJcount0 or RJcount1 counter value.
  *
  * \param[IN]     fCntID          - Frame counter identifier
